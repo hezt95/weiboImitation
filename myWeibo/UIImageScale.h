@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UIImageScale.h
 //  myWeibo
 //
 //  Created by HeZitong on 14/11/6.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-
+@interface UIImage (UIImageScale)
+-(UIImage*)getSubImage:(CGRect)rect;
+-(UIImage*)scaleToSize:(CGSize)size;
 @end
-
